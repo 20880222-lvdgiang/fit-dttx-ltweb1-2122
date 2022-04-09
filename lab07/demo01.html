@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            line-height: 200px;
+            background-color:blueviolet;
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Filter</h1>
+    <p>This is paragraph 01</p>
+    <p>This is paragraph 02</p>
+    <p>This is paragraph 03</p>
+    <p>This is paragraph 04</p>
+<hr/>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 1</li>
+        <li>List item 1</li>
+        <li>List item 1</li>
+    </ul>
+    <div id="footer">Footer of the page</div>
+
+    <h1>Form</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>User information</legend>
+                <div>
+                    <lab for="txt01">Username</lab>
+                    <input type="text" id="txt01"/>
+                </div>
+                <div>
+                    <lab for="txt02">Password</lab>
+                    <input type="password" id="txt01"/>
+                </div>
+                <div>
+                    <lab for="txt03">Fullname</lab>
+                    <input type="text" id="txt01"/>
+                </div>
+        </fieldset>
+    </form>
+
+    <h1>Animation</h1>
+    <button type="button" id="btnShow">Show</button>
+    <button type="button" id="btnHide">Hide</button>
+    <button type="button" id="btnFadeIn">Fade-in</button>
+    <button type="button" id="btnFadeOut">Fade-out</button>
+    <hr>
+    <div id="content">Content</div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $('#btnShow').click(function(){
+               $('div').show(300);
+           })
+        })
+    </script>
+</body>
+</html>
